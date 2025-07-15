@@ -8,11 +8,14 @@
 import MapKit
 import SwiftUI
 
+// 1. 기본 MapFeature에서 받아올 수 있는 정보들 정리
+
 struct POIDetailView: View {
   
   // MARK: - Properties
   
   let feature: MapFeature
+  @ObservedObject var locationManager: LocationManager
   
   // MARK: - Views
   

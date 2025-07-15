@@ -40,7 +40,7 @@ struct ContentView: View {
         cameraPosition = .region(region)
       }
       .sheet(item: $selection) { feature in
-        POIDetailView(feature: feature)
+        POIDetailView(feature: feature, locationManager: locationManager)
           .presentationDetents([.height(100), .height(200)])
           .presentationDragIndicator(.visible)
       }
