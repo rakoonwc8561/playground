@@ -11,7 +11,8 @@ import SwiftUI
 struct MyCalendarApp: App {
   var body: some Scene {
     WindowGroup {
-      DatePickerView()
+//      CustomCalendarView(selectedDate: .constant(Date()))
+      CustomCalendarView()
     }
   }
 }
